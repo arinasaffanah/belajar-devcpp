@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	string nama[3] = {"Arina", "Saffanah", "Zakiyyah"};
+	string jabatan[3] = {"Direkur", "Manager", "Sekretaris"};
+	string status_perkawinan[3] = {"Sudah kawin", "Sudah kawin", "Sudah kawin"};
+	int jumlah_anak[3] = {"4", "2", "3"};
+	double gaji[3] = {"Rp10.000.000,00", "Rp7.000.000,00", "Rp4.000.000,00"};
+	double tunjangan_anak[3], tunjangan_istri[3], total_gaji[3];
+	
+	tunjangan_istri[3] = 0.1 * gaji[3];
+	tunjangan_anak[3] = 0.2 * gaji[3];
+	total_gaji[3] = gaji[3] + (tunjangan_istri[3] + tunjangan_anak[3]);
+	
+	for(int a = 0; a <= 3; a++){
+		cout<<a+1<<"Nama karyawan \t= "<<nama[a]<<endl;
+		cout<<"   Jabatan \t= "<<jabatan[a]<<endl;
+		cout<<"   GAji \t= "<<gaji[a]<<endl;
+		cout<<"   Status perkawinan \t= "<<status_perkawinan[a]<<endl;
+		cout<<"   Jumlah anak \t= "<<jumlah_anak[a]<<endl;
+		cout<<"   Tunjangan anak \t= "<<tunjangan_anak[a]<<endl;
+		cout<<"   Tunjangan istri \t= "<<tunjangan_istri[a]<<endl;
+		cout<<"-------------------------------------------------------"<<endl;
+		cout<<"   Total gaji \t= "<<total_gaji[a]<<endl;
+		
+	}
+}
